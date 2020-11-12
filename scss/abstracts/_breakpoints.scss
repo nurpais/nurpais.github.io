@@ -1,0 +1,72 @@
+// Min-width
+// Small devices (landscape phones, 576px and up)
+@mixin sm {
+  @media (min-width: map-get($breakpoints, sm)) {
+    @content;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@mixin md {
+  @media (min-width: map-get($breakpoints, md)) {
+    @content;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@mixin lg {
+  @media (min-width: map-get($breakpoints, lg)) {
+    @content;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@mixin xl {
+  @media (min-width: map-get($breakpoints, xl)) {
+    @content;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@mixin xxl {
+  @media (min-width: map-get($breakpoints, xxl)) {
+    @content;
+  }
+}
+
+// ============
+// Max-width
+// Small devices (less than 576px)
+@mixin sm-down {
+  @media (max-width: map-get($breakpoints, sm) - 0.02) {
+    @content;
+  }
+}
+
+// Medium devices (less than 768px)
+@mixin md-down {
+  @media (max-width: map-get($breakpoints, md) - 0.02) {
+    @content;
+  }
+}
+
+// Large devices (less than 992px)
+@mixin lg-down {
+  @media (max-width: map-get($breakpoints, lg) - 0.02) {
+    @content;
+  }
+}
+
+// X-Large devices (less than 1200px)
+@mixin xl-down {
+  @media (max-width: map-get($breakpoints, xl) - 0.02) {
+    @content;
+  }
+}
+
+// XX-Large devices (less than 1400px)
+@mixin xxl-down {
+  @media (max-width: map-get($breakpoints, xxl) - 0.02) {
+    @content;
+  }
+}

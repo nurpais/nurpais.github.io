@@ -1,0 +1,299 @@
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@include sm {
+  .mx-sm-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@include md {
+  .mx-md-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@include lg {
+  .mx-lg-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@include xl {
+  .mx-xl-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@include xxl {
+  .mx-xxl-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+$spacing-count: 6;
+
+// Loop for margin
+@for $i from 0 through $spacing-count {
+  .mx-#{$i} {
+    margin-left: #{$i}rem !important ;
+    margin-right: #{$i}rem !important ;
+  }
+
+  .my-#{$i} {
+    margin-top: #{$i}rem !important ;
+    margin-bottom: #{$i}rem !important ;
+  }
+
+  // Margin top
+  .mt-#{$i} {
+    margin-top: #{$i}rem !important;
+  }
+
+  // Margin right
+  .mr-#{$i} {
+    margin-right: #{$i}rem !important;
+  }
+
+  // Margin bottom
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem !important;
+  }
+
+  // Margin left
+  .ml-#{$i} {
+    margin-left: #{$i}rem !important;
+  }
+}
+
+// Loop for padding
+@for $i from 0 through $spacing-count {
+  .px-#{$i} {
+    padding-left: #{$i}rem !important ;
+    padding-right: #{$i}rem !important ;
+  }
+
+  .py-#{$i} {
+    padding-top: #{$i}rem !important ;
+    padding-bottom: #{$i}rem !important ;
+  }
+
+  // Padding top
+  .pt-#{$i} {
+    padding-top: #{$i}rem !important;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i}rem !important;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i}rem !important;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i}rem !important;
+  }
+}
+
+@include md {
+  // Loop for margin
+  @for $i from 0 through $spacing-count {
+    .mx-md-#{$i} {
+      margin-left: #{$i}rem !important ;
+      margin-right: #{$i}rem !important ;
+    }
+
+    .my-md-#{$i} {
+      margin-top: #{$i}rem !important ;
+      margin-bottom: #{$i}rem !important ;
+    }
+
+    // Margin top
+    .mt-md-#{$i} {
+      margin-top: #{$i}rem !important;
+    }
+
+    // Margin right
+    .mr-md-#{$i} {
+      margin-right: #{$i}rem !important;
+    }
+
+    // Margin bottom
+    .mb-md-#{$i} {
+      margin-bottom: #{$i}rem !important;
+    }
+
+    // Margin left
+    .ml-md-#{$i} {
+      margin-left: #{$i}rem !important;
+    }
+  }
+
+  // Loop for padding
+  @for $i from 0 through $spacing-count {
+    .px-md-#{$i} {
+      padding-left: #{$i}rem !important ;
+      padding-right: #{$i}rem !important ;
+    }
+
+    .py-md-#{$i} {
+      padding-top: #{$i}rem !important ;
+      padding-bottom: #{$i}rem !important ;
+    }
+
+    // Padding top
+    .pt-md-#{$i} {
+      padding-top: #{$i}rem !important;
+    }
+
+    .pr-md-#{$i} {
+      padding-right: #{$i}rem !important;
+    }
+
+    .pb-md-#{$i} {
+      padding-bottom: #{$i}rem !important;
+    }
+
+    .pl-md-#{$i} {
+      padding-left: #{$i}rem !important;
+    }
+  }
+}
+
+@include lg {
+  // Loop for margin
+  @for $i from 0 through $spacing-count {
+    .mx-lg-#{$i} {
+      margin-left: #{$i}rem !important ;
+      margin-right: #{$i}rem !important ;
+    }
+
+    .my-lg-#{$i} {
+      margin-top: #{$i}rem !important ;
+      margin-bottom: #{$i}rem !important ;
+    }
+
+    // Margin top
+    .mt-lg-#{$i} {
+      margin-top: #{$i}rem !important;
+    }
+
+    // Margin right
+    .mr-lg-#{$i} {
+      margin-right: #{$i}rem !important;
+    }
+
+    // Margin bottom
+    .mb-lg-#{$i} {
+      margin-bottom: #{$i}rem !important;
+    }
+
+    // Margin left
+    .ml-lg-#{$i} {
+      margin-left: #{$i}rem !important;
+    }
+  }
+
+  // Loop for padding
+  @for $i from 0 through $spacing-count {
+    .px-lg-#{$i} {
+      padding-left: #{$i}rem !important ;
+      padding-right: #{$i}rem !important ;
+    }
+
+    .py-lg-#{$i} {
+      padding-top: #{$i}rem !important ;
+      padding-bottom: #{$i}rem !important ;
+    }
+
+    // Padding top
+    .pt-lg-#{$i} {
+      padding-top: #{$i}rem !important;
+    }
+
+    .pr-lg-#{$i} {
+      padding-right: #{$i}rem !important;
+    }
+
+    .pb-lg-#{$i} {
+      padding-bottom: #{$i}rem !important;
+    }
+
+    .pl-lg-#{$i} {
+      padding-left: #{$i}rem !important;
+    }
+  }
+}
+
+@include xl {
+  // Loop for margin
+  @for $i from 0 through $spacing-count {
+    .mx-xl-#{$i} {
+      margin-left: #{$i}rem !important ;
+      margin-right: #{$i}rem !important ;
+    }
+
+    .my-xl-#{$i} {
+      margin-top: #{$i}rem !important ;
+      margin-bottom: #{$i}rem !important ;
+    }
+
+    // Margin top
+    .mt-xl-#{$i} {
+      margin-top: #{$i}rem !important;
+    }
+
+    // Margin right
+    .mr-xl-#{$i} {
+      margin-right: #{$i}rem !important;
+    }
+
+    // Margin bottom
+    .mb-xl-#{$i} {
+      margin-bottom: #{$i}rem !important;
+    }
+
+    // Margin left
+    .ml-xl-#{$i} {
+      margin-left: #{$i}rem !important;
+    }
+  }
+
+  // Loop for padding
+  @for $i from 0 through $spacing-count {
+    .px-xl-#{$i} {
+      padding-left: #{$i}rem !important ;
+      padding-right: #{$i}rem !important ;
+    }
+
+    .py-xl-#{$i} {
+      padding-top: #{$i}rem !important ;
+      padding-bottom: #{$i}rem !important ;
+    }
+
+    // Padding top
+    .pt-xl-#{$i} {
+      padding-top: #{$i}rem !important;
+    }
+
+    .pr-xl-#{$i} {
+      padding-right: #{$i}rem !important;
+    }
+
+    .pb-xl-#{$i} {
+      padding-bottom: #{$i}rem !important;
+    }
+
+    .pl-xl-#{$i} {
+      padding-left: #{$i}rem !important;
+    }
+  }
+}

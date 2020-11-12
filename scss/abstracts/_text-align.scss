@@ -1,0 +1,105 @@
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+@include sm {
+  .text-md-left {
+    text-align: left !important;
+  }
+
+  .text-md-center {
+    text-align: center !important;
+  }
+
+  .text-md-right {
+    text-align: right !important;
+  }
+
+  .text-md-justify {
+    text-align: justify !important;
+  }
+}
+
+@include md {
+  .text-md-left {
+    text-align: left !important;
+  }
+
+  .text-md-center {
+    text-align: center !important;
+  }
+
+  .text-md-right {
+    text-align: right !important;
+  }
+
+  .text-md-justify {
+    text-align: justify !important;
+  }
+}
+
+@include lg {
+  .text-lg-left {
+    text-align: left !important;
+  }
+
+  .text-lg-center {
+    text-align: center !important;
+  }
+
+  .text-lg-right {
+    text-align: right !important;
+  }
+
+  .text-lg-justify {
+    text-align: justify !important;
+  }
+}
+
+@include xl {
+  .text-xl-left {
+    text-align: left !important;
+  }
+
+  .text-xl-center {
+    text-align: center !important;
+  }
+
+  .text-xl-right {
+    text-align: right !important;
+  }
+
+  .text-xl-justify {
+    text-align: justify !important;
+  }
+}
+
+@include xxl {
+  .text-xxl-left {
+    text-align: left !important;
+  }
+
+  .text-xxl-center {
+    text-align: center !important;
+  }
+
+  .text-xxl-right {
+    text-align: right !important;
+  }
+
+  .text-xxl-justify {
+    text-align: justify !important;
+  }
+}

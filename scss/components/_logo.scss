@@ -1,0 +1,9 @@
+.logo {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 3rem;
+  font-weight: 700;
+
+  @include md {
+    font-size: 3.6rem;
+  }
+}

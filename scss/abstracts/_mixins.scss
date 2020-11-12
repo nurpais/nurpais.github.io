@@ -1,0 +1,7 @@
+// SCSS Mixins
+@import "breakpoints";
+
+@mixin mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}

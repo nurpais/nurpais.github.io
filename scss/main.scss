@@ -1,0 +1,34 @@
+// Abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/classes";
+@import "./abstracts/animations";
+@import "./abstracts/spacing";
+@import "./abstracts/display";
+@import "./abstracts/flex";
+@import "./abstracts/text-align";
+
+// Vendors
+// @import "./vendors/locomotive-scroll.min.scss";
+
+// Base
+@import "./base/base";
+@import "./base/reset";
+@import "./base/typography";
+
+// Layout
+@import "./layout/container";
+@import "./layout/navbar";
+@import "./layout/header";
+@import "./layout/section";
+@import "./layout/footer";
+
+// Components
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/service";
+@import "./components/contact";
+@import "./components/cursor";
+
+// Pages
+@import "./pages/home";

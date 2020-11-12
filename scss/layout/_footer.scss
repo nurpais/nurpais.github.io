@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+
+  &__nav {
+    display: flex;
+  }
+
+  &__nav-item {
+    padding: 0 2rem;
+  }
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__nav-item {
+      padding: 0 2rem;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

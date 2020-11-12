@@ -1,0 +1,15 @@
+section {
+  padding: 5rem 0;
+
+  @include md {
+    padding: 7rem 0;
+  }
+
+  @include xl {
+    padding: 10rem 0;
+  }
+
+  @include xxl {
+    padding: 12rem 0;
+  }
+}

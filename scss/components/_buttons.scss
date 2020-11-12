@@ -1,0 +1,36 @@
+.link-border-in,
+.link-border-out {
+  position: relative;
+  z-index: 10;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 98%;
+    right: 0;
+    left: 0;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04), opacity 0.2s cubic-bezier(0.28, 0.29, 0.17, 1.04);
+    will-change: transform, opacity;
+  }
+}
+
+.link-border-in {
+  &::after {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  &:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.link-border-out {
+  &:hover::after {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}

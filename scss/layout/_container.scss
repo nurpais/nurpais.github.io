@@ -1,0 +1,27 @@
+.container {
+  @include mx-auto;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+
+  @include sm {
+    max-width: map-get($container-max-widths, sm);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include md {
+    max-width: map-get($container-max-widths, md);
+  }
+
+  @include lg {
+    max-width: map-get($container-max-widths, lg);
+  }
+
+  @include xl {
+    max-width: map-get($container-max-widths, xl);
+  }
+
+  @include xxl {
+    max-width: map-get($container-max-widths, xxl);
+  }
+}

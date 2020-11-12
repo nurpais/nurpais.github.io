@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-item {
+    padding: 0 1.8rem;
+  }
+
+  @include md {
+    padding: 4rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__menu-item {
+      padding: 0 2rem;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.navbar + .header {
+  height: calc(100vh - 122px) !important;
+
+  @include md {
+    height: calc(100vh - 134px) !important;
+  }
+}
