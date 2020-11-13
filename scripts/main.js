@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
   // Locomotive scroll
   (function () {
     var scroll = new LocomotiveScroll({
