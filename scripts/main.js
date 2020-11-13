@@ -60,7 +60,7 @@ window.addEventListener("load", function () {
 // Intersection Observer API
 (function () {
   const options = {
-    threshold: [0.8, 0.1],
+    threshold: [0.6, 0.1],
   };
 
   const callback = function (entries, observer) {
@@ -68,30 +68,34 @@ window.addEventListener("load", function () {
       if (entry.isIntersecting) {
         if (!entry.target.dataset.fadeY) {
           gsap.to(entry.target, {
-            duration: 1,
+            duration: 0.6,
             opacity: 1,
             y: 0,
             delay: entry.target.dataset.fadeDelay,
+            ease: "sine.out",
           });
         } else {
           gsap.to(entry.target, {
-            duration: 1,
+            duration: 0.6,
             opacity: 1,
             delay: entry.target.dataset.fadeDelay,
+            ease: "sine.out",
           });
         }
       } else {
         if (!entry.target.dataset.fadeY) {
           gsap.to(entry.target, {
-            duration: 1,
+            duration: 0.6,
             opacity: 0,
             delay: entry.target.dataset.fadeDelay,
+            ease: "sine.out",
           });
         } else {
           gsap.to(entry.target, {
-            duration: 1,
+            duration: 0.6,
             opacity: 0,
             delay: entry.target.dataset.fadeDelay,
+            ease: "sine.out",
           });
         }
       }
