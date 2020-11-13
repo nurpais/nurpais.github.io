@@ -17,7 +17,6 @@
 }
 
 @media (min-width: 768px) {
-
   .mt-md-0 {
     margin-top: 0rem !important;
   }
@@ -39,13 +38,11 @@
 }
 
 @media (min-width: 576px) {
-
   .d-sm-block {
     display: block !important;
   }
 }
 @media (min-width: 768px) {
-
   .d-md-block {
     display: block !important;
   }
@@ -56,7 +53,7 @@ html {
   overflow-x: hidden;
   background-color: #fff;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 a {
@@ -93,7 +90,6 @@ h6 {
 ul {
   list-style: none;
 }
-
 
 input {
   margin: 0;
@@ -238,13 +234,13 @@ a {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 2rem 0;
 }
 .navbar__menu {
@@ -254,8 +250,8 @@ a {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .navbar__menu-item {
   padding: 0 1.8rem;
@@ -266,12 +262,12 @@ a {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .navbar__menu-item {
     padding: 0 2rem;
@@ -300,8 +296,8 @@ a {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .header {
@@ -335,13 +331,13 @@ section {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 5rem 0;
 }
 .footer__nav {
@@ -358,12 +354,12 @@ section {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .footer__nav-item {
     padding: 0 2rem;
@@ -387,30 +383,33 @@ section {
   left: 0;
   height: 2px;
   background-color: #000;
-  -webkit-transition: opacity 0.2s cubic-bezier(0.28, 0.29, 0.17, 1.04), -webkit-transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04);
-  transition: opacity 0.2s cubic-bezier(0.28, 0.29, 0.17, 1.04), -webkit-transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04);
+  -webkit-transition: opacity 0.2s cubic-bezier(0.28, 0.29, 0.17, 1.04),
+    -webkit-transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04);
+  transition: opacity 0.2s cubic-bezier(0.28, 0.29, 0.17, 1.04),
+    -webkit-transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04);
   transition: transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04), opacity 0.2s cubic-bezier(0.28, 0.29, 0.17, 1.04);
-  transition: transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04), opacity 0.2s cubic-bezier(0.28, 0.29, 0.17, 1.04), -webkit-transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04);
+  transition: transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04), opacity 0.2s cubic-bezier(0.28, 0.29, 0.17, 1.04),
+    -webkit-transform 0.3s cubic-bezier(0.28, 0.29, 0.17, 1.04);
   will-change: transform, opacity;
 }
 
 .link-border-in::after {
   opacity: 0;
   -webkit-transform: translateY(1rem);
-      -ms-transform: translateY(1rem);
-          transform: translateY(1rem);
+  -ms-transform: translateY(1rem);
+  transform: translateY(1rem);
 }
 .link-border-in:hover::after {
   -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   opacity: 1;
 }
 
 .link-border-out:hover::after {
   -webkit-transform: translateY(1rem);
-      -ms-transform: translateY(1rem);
-          transform: translateY(1rem);
+  -ms-transform: translateY(1rem);
+  transform: translateY(1rem);
   opacity: 0;
 }
 
@@ -438,7 +437,7 @@ section {
 }
 
 @media (min-width: 768px) {
-  .circle {
+  .cursor {
     position: fixed;
     z-index: 100;
     background-color: red;
@@ -448,12 +447,12 @@ section {
     top: -5px;
     border-radius: 100%;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     pointer-events: none;
   }
-  .circle.active {
+  .cursor.active {
     opacity: 0;
   }
 }
@@ -474,8 +473,8 @@ section {
 @media (max-width: 767.98px) {
   .section-pixel__text-block {
     -webkit-transform: none !important;
-        -ms-transform: none !important;
-            transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
   }
 }
 .section-pixel .pixel-img {
@@ -501,14 +500,14 @@ section {
     grid-template-columns: 45% 55%;
     -webkit-box-align: center;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .section-pixel img {
     -webkit-box-ordinal-group: initial;
     -webkit-order: initial;
-        -ms-flex-order: initial;
-            order: initial;
+    -ms-flex-order: initial;
+    order: initial;
   }
 }
 

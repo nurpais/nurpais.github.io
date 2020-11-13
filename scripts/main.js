@@ -4,33 +4,35 @@ window.addEventListener("load", function () {
     var scroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
       smooth: true,
-      multiplier: 0.8,
     });
   })();
 
   // GSAP cursor
   (function () {
-    let circle = document.querySelector(".circle");
+    let cursor = document.querySelector(".cursor");
 
-    function moveCircle(e) {
-      TweenLite.to(circle, 0.3, {
+    function movecursor(e) {
+      TweenLite.to(cursor, 0.3, {
         x: e.clientX,
         y: e.clientY,
       });
     }
 
-    window.addEventListener("mousemove", moveCircle);
+    window.addEventListener("mousemove", movecursor);
 
     document.querySelectorAll("a").forEach((el) => {
       el.addEventListener("mouseenter", () => {
-        circle.classList.add("active");
+        cursor.classList.add("active");
       });
     });
 
     document.querySelectorAll("a").forEach((el) => {
       el.addEventListener("mouseleave", () => {
-        circle.classList.remove("active");
+        cursor.classList.remove("active");
       });
     });
   })();
+
+  // Hero animation
+  (function () {})();
 });
