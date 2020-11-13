@@ -13,8 +13,11 @@
     <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico" />
   </head>
   <body>
+    <!-- Custom cursos -->
     <div class="cursor"></div>
+    <div class="overlay"></div>
 
+    <!-- Scroll content -->
     <div data-scroll-container>
       <div class="container">
         <!-- Navbar -->
@@ -39,21 +42,27 @@
         <!-- Header -->
         <header class="header">
           <div class="header__block">
-            <img src="images/waves.gif" alt="Waves" />
+            <img class="header-wave" src="images/waves.gif" alt="Waves" />
 
             <h1 class="heading-primary mt-1 mt-md-2">
-              Hey there *waves*, <br />
-              my name is Nurpais, <br />
-              a freelance Front-End <br />
-              developer based in Bishkek.
+              <span class="hide-text">
+                Hey there *waves*, <br />
+                my name is Nurpais, <br />
+                a freelance Front-End <br />
+                developer based in Bishkek.
+              </span>
             </h1>
 
             <p class="mt-1 mt-md-2">
-              I craft high-quality, bespoke digital solutions <br class="d-none d-sm-block" />
-              for forward-thinking brands, like yours.
+              <span class="hide-text">
+                I craft high-quality, bespoke digital solutions <br class="d-none d-sm-block" />
+                for forward-thinking brands, like yours.</span
+              >
             </p>
 
-            <a class="link-border-out mt-3 mt-md-5" href="#">learn more</a>
+            <div class="hide-text">
+              <a class="link-border-out mt-3 mt-md-5" href="#">learn more</a>
+            </div>
           </div>
         </header>
         <!-- Header end -->
@@ -61,12 +70,15 @@
         <!-- Main -->
         <main class="main">
           <!-- Pixel section -->
+
           <section class="section-pixel">
             <div
               class="section-pixel__text-block mt-2"
               data-scroll
               data-scroll-speed="-3"
               data-scroll-target=".container"
+              data-fade
+              data-fade-y="true"
             >
               <h2 class="heading-secondary">I build pixel-perfect web solutions for all devices.</h2>
               <a class="link-border-out mt-2" href="#">view my work</a>
@@ -95,7 +107,7 @@
 
           <!-- Services section -->
           <section class="section-services">
-            <h2 class="heading-secondary">
+            <h2 class="heading-secondary" data-fade>
               I can take responsibility for one part <br class="d-none d-md-block" />
               of your project, or deliver the whole solution.
             </h2>
@@ -103,7 +115,7 @@
             <!-- Services -->
             <div class="services mt-3 mt-md-6">
               <!-- Service item -->
-              <div class="service">
+              <div class="service" data-fade>
                 <h3 class="service__heading">Web Design & Development</h3>
                 <p class="service__desc">
                   I build bespoke, scalable web applications using modern web technologies and tools. I ensure all
@@ -112,7 +124,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service">
+              <div class="service" data-fade data-fade-delay=".2">
                 <h3 class="service__heading">Responsive Design</h3>
                 <p class="service__desc">
                   Mobile phones now account for more than half of all internet traffic which is why I ensure that all
@@ -122,7 +134,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service">
+              <div class="service" data-fade>
                 <h3 class="service__heading">E-Commerce</h3>
                 <p class="service__desc">
                   I utilize powerfull platforms and tools to build scalable, purpose-driven e-Commerce solutions. Your
@@ -131,7 +143,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service">
+              <div class="service" data-fade data-fade-delay=".2">
                 <h3 class="service__heading">Content Management</h3>
                 <p class="service__desc">
                   It's important that you're able to self-manage your website from any place at any time, which is why I
@@ -140,7 +152,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service">
+              <div class="service" data-fade>
                 <h3 class="service__heading">Website Management</h3>
                 <p class="service__desc">
                   I provide various website management options which include - updating content, backing-up important
@@ -149,7 +161,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service">
+              <div class="service" data-fade data-fade-delay=".2">
                 <h3 class="service__heading">SEO</h3>
                 <p class="service__desc">
                   Standard on-page SEO practices are included with every website I develop. This allows your website to
@@ -163,7 +175,7 @@
         <!-- Main end -->
 
         <!-- Section contact -->
-        <section class="contact">
+        <section class="contact" data-fade>
           <h2 class="heading-secondary">Let's build something great together.</h2>
           <p class="contact__subtitle mt-1">
             If you'd like to start a new project, need help with an existing project or have any other enquiry, please
