@@ -38,6 +38,8 @@ window.addEventListener("load", function () {
 // GSAP Hero animation
 window.addEventListener("load", function () {
   let heroElements = document.querySelectorAll(".hide-text");
+  let anOpacity = document.querySelectorAll(".an-opacity");
+
   let navbar = document.querySelector(".navbar");
   let headerWave = document.querySelector(".header-wave");
   let overlay = document.querySelector(".overlay");
@@ -48,12 +50,21 @@ window.addEventListener("load", function () {
 
   gsap.to(overlay, { duration: 1, display: "none", ease: "expo.out", onComplete: mainAnimation });
 
-  gsap.from(headerWave, { display: "none" });
+  if (headerWave) {
+    gsap.from(headerWave, { display: "none" });
+  }
 
   function mainAnimation() {
-    gsap.from(heroElements, { duration: 1, stagger: 0.2, x: "-100%", ease: "expo.out" });
-    gsap.from(navbar, { duration: 0.6, opacity: 0, delay: 0.6, ease: "sine.in" });
-    gsap.from(headerWave, { duration: 0.6, opacity: 0, delay: 0.8, ease: "sine.in" });
+    if (heroElements.length) {
+      gsap.from(heroElements, { duration: 1, stagger: 0.2, x: "-100%", ease: "expo.out" });
+    }
+    anOpacity.length ? gsap.from(anOpacity, { duration: 1, stagger: 0.2, opacity: 0, ease: "ease.In" }) : null;
+
+    gsap.from(navbar, { duration: 0.6, opacity: 0, ease: "sine.in" });
+
+    if (headerWave) {
+      gsap.from(headerWave, { duration: 0.6, opacity: 0, delay: 0.8, ease: "sine.in" });
+    }
   }
 });
 
@@ -63,6 +74,8 @@ window.addEventListener("load", function () {
     threshold: [0.6, 0.1],
   };
 
+  const screenWidth = window.innerWidth > 768;
+
   const callback = function (entries, observer) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -71,14 +84,14 @@ window.addEventListener("load", function () {
             duration: 0.6,
             opacity: 1,
             y: 0,
-            delay: entry.target.dataset.fadeDelay,
+            delay: screenWidth ? entry.target.dataset.fadeDelay : null,
             ease: "sine.out",
           });
         } else {
           gsap.to(entry.target, {
             duration: 0.6,
             opacity: 1,
-            delay: entry.target.dataset.fadeDelay,
+            delay: screenWidth ? entry.target.dataset.fadeDelay : null,
             ease: "sine.out",
           });
         }
@@ -87,14 +100,14 @@ window.addEventListener("load", function () {
           gsap.to(entry.target, {
             duration: 0.6,
             opacity: 0,
-            delay: entry.target.dataset.fadeDelay,
+
             ease: "sine.out",
           });
         } else {
           gsap.to(entry.target, {
             duration: 0.6,
             opacity: 0,
-            delay: entry.target.dataset.fadeDelay,
+
             ease: "sine.out",
           });
         }
