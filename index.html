@@ -21,7 +21,7 @@
     <div data-scroll-container>
       <div class="container">
         <!-- Navbar -->
-        <nav class="navbar">
+        <nav class="navbar" data-animation-opacity data-delay=".5">
           <!-- Logo -->
           <a href="index.html" class="logo">nur.</a>
 
@@ -36,7 +36,7 @@
         <!-- Header -->
         <header class="header">
           <div class="header__block">
-            <img class="header-wave" src="images/waves.gif" alt="Waves" />
+            <img class="header-wave" src="images/waves.gif" alt="Waves" data-animation-opacity data-delay=".7" />
 
             <h1 class="heading-primary mt-1 mt-md-2">
               <span class="hide-text">
@@ -71,10 +71,10 @@
               data-scroll
               data-scroll-speed="-3"
               data-scroll-target=".container"
-              data-fade
-              data-fade-y="true"
             >
-              <h2 class="heading-secondary">I build pixel-perfect web solutions for all devices.</h2>
+              <h2 class="heading-secondary" data-animation-opacity>
+                I build pixel-perfect web solutions for all devices.
+              </h2>
               <a class="link-border-out mt-2" href="#">view my work</a>
             </div>
 
@@ -101,7 +101,7 @@
 
           <!-- Services section -->
           <section class="section-services">
-            <h2 class="heading-secondary" data-fade>
+            <h2 class="heading-secondary" data-animation-y>
               I can take responsibility for one part <br class="d-none d-md-block" />
               of your project, or deliver the whole solution.
             </h2>
@@ -109,7 +109,7 @@
             <!-- Services -->
             <div class="services mt-3 mt-md-6">
               <!-- Service item -->
-              <div class="service" data-fade>
+              <div class="service" data-animation-y>
                 <h3 class="service__heading">Web Design & Development</h3>
                 <p class="service__desc">
                   I build bespoke, scalable web applications using modern web technologies and tools. I ensure all
@@ -118,7 +118,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service" data-fade data-fade-delay=".3">
+              <div class="service" data-animation-y data-delay=".3">
                 <h3 class="service__heading">Responsive Design</h3>
                 <p class="service__desc">
                   Mobile phones now account for more than half of all internet traffic which is why I ensure that all
@@ -128,7 +128,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service" data-fade>
+              <div class="service" data-animation-y>
                 <h3 class="service__heading">E-Commerce</h3>
                 <p class="service__desc">
                   I utilize powerfull platforms and tools to build scalable, purpose-driven e-Commerce solutions. Your
@@ -137,7 +137,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service" data-fade data-fade-delay=".3">
+              <div class="service" data-animation-y data-delay=".3">
                 <h3 class="service__heading">Content Management</h3>
                 <p class="service__desc">
                   It's important that you're able to self-manage your website from any place at any time, which is why I
@@ -146,7 +146,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service" data-fade>
+              <div class="service" data-animation-y>
                 <h3 class="service__heading">Website Management</h3>
                 <p class="service__desc">
                   I provide various website management options which include - updating content, backing-up important
@@ -155,7 +155,7 @@
               </div>
 
               <!-- Service item -->
-              <div class="service" data-fade data-fade-delay=".3">
+              <div class="service" data-animation-y data-delay=".3">
                 <h3 class="service__heading">SEO</h3>
                 <p class="service__desc">
                   Standard on-page SEO practices are included with every website I develop. This allows your website to
@@ -169,7 +169,7 @@
         <!-- Main end -->
 
         <!-- Section contact -->
-        <section class="contact" data-fade>
+        <section class="contact" data-animation-y>
           <h2 class="heading-secondary">Let's build something great together.</h2>
           <p class="contact__subtitle mt-1">
             If you'd like to start a new project, need help with an existing project or have any other enquiry, please
@@ -180,7 +180,7 @@
         <!-- Section contact end -->
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" data-animation-y>
           <a class="logo" href="index.html">nur.</a>
 
           <p class="mt-1 mt-md-0">Bishkek, Kyrgyzstan</p>

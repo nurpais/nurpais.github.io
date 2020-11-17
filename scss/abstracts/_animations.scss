@@ -14,7 +14,13 @@
   left: 0;
 }
 
-[data-fade] {
+[data-animation-y] {
   opacity: 0;
+  will-change: transform, opacity;
   transform: translateY(40px);
+}
+
+[data-animation-opacity] {
+  opacity: 0;
+  will-change: opacity;
 }

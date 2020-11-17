@@ -8,5 +8,8 @@ module.exports = {
       css: [], // css
       safelist: ["active"],
     }),
+    require("cssnano")({
+      preset: "default",
+    }),
   ],
 };
