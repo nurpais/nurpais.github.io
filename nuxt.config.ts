@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/fonts',
     '@nuxt/image',
+    'lenis/nuxt'
   ],
 
   vite: {
