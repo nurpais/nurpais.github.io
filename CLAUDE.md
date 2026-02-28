@@ -59,6 +59,50 @@ Placeholders for now — to be filled in later with real projects.
 - Subtle hover effects on project cards and nav links
 - No heavy WebGL / Canvas for now — keep it clean
 
+## Consistency Rules (MUST follow across all components)
+
+### Spacing
+- Section vertical padding: `py-32` (top + bottom)
+- Section horizontal padding: `px-6`
+- Inner max-width container: `max-w-6xl mx-auto`
+- Section header gap (accent line + label): `flex items-center gap-3 mb-16`
+- Accent line before section label: `<span class="w-6 h-px bg-accent" />`
+- Section label style: `font-mono text-xs text-accent tracking-widest uppercase`
+
+### Typography
+- Section headings: `font-sans text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-tight tracking-tight text-text`
+- Body / description text: `text-text-muted leading-relaxed`
+- Mono labels / tags / indices: `font-mono text-xs`
+- Nav logo: `font-mono text-sm`
+
+### Colors (semantic tokens — never raw hex)
+- `text-text` — primary text
+- `text-text-muted` — secondary / body text
+- `text-text-dim` — tertiary / labels / indices
+- `text-accent` — green accent (`#4ade80`)
+- `bg-bg` — main background
+- `bg-bg-subtle` — subtle hover background
+- `border-border` — default border color
+
+### Animations
+- Scroll reveal entry: `opacity: 0, y: 24–40` → `opacity: 1, y: 0`; `duration: 0.5–0.8`, `ease: 'power3.out'` or `'expo.out'`
+- Stagger between items: `0.07–0.1s`
+- Hover transitions: `duration-300` (Tailwind), `ease-out`
+- GSAP overlay enter: fade `0.18s power2.out` + stagger items `0.55s expo.out`
+- GSAP overlay leave: stagger items `0.12s power2.in` + fade `0.12s`
+- ScrollTrigger default: `start: 'top 80%'`, `once: true`
+- Always use `useScrollReveal` composable for section reveal — don't write raw GSAP ScrollTrigger per-section
+
+### Borders / Dividers
+- Section top border: `border-t border-border`
+- Grid gap via background: `grid gap-px bg-border` (children use `bg-bg`)
+- List dividers: `divide-y divide-border`
+
+### Hover Effects
+- Text color transition: `hover:text-text` or `hover:text-accent`, always `transition-colors duration-300`
+- Underline reveal (nav links): `absolute h-px bg-accent/60 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out`
+- Translate on hover: `group-hover:translate-x-1` or `group-hover:-translate-y-0.5`, always with `transition-all duration-300`
+
 ---
 
 
