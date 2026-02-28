@@ -37,7 +37,7 @@ onUnmounted(() => {
 
 <template>
   <VueLenis root :options="lenisOptions" :auto-raf="false">
-    <div class="relative">
+    <div class="relative bg-bg min-h-screen">
       <TheNav />
       <main>
         <HeroSection />
