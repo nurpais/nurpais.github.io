@@ -10,6 +10,12 @@ onMounted(() => {
     .from('.hero-bio', { opacity: 0, y: 20, duration: 0.6 }, '-=0.4')
     .from('.hero-cta', { opacity: 0, y: 16, duration: 0.5 }, '-=0.3')
     .from('.hero-scroll', { opacity: 0, duration: 0.5 }, '-=0.1')
+    .add(() => {
+      gsap.fromTo('.hero-scroll-line',
+        { y: '-100%' },
+        { y: '250%', duration: 1.6, ease: 'sine.inOut', repeat: -1, repeatDelay: 0.2 },
+      )
+    })
 })
 </script>
 
@@ -64,16 +70,9 @@ onMounted(() => {
     <!-- Scroll indicator -->
     <div class="hero-scroll absolute bottom-10 left-6 items-center gap-3 hidden md:flex">
       <div class="w-px h-12 bg-border relative overflow-hidden">
-        <div class="w-full bg-accent animate-[scrollLine_1.8s_ease-in-out_infinite]" style="height: 40%" />
+        <div class="hero-scroll-line w-full h-2/5 bg-accent absolute top-0" />
       </div>
       <span class="font-mono text-xs text-text-dim tracking-widest uppercase">Scroll</span>
     </div>
   </section>
 </template>
-
-<style scoped>
-@keyframes scrollLine {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(300%); }
-}
-</style>
