@@ -23,8 +23,11 @@ onMounted(() => {
   <section class="relative min-h-screen flex flex-col justify-center px-6 pt-24 pb-16 max-w-6xl mx-auto">
     <div class="max-w-4xl">
       <!-- Label -->
-      <div class="hero-label flex items-center gap-3 mb-8">
-        <span class="w-6 h-px bg-accent" />
+      <div class="hero-label flex items-center gap-2.5 mb-8">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-60" />
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+        </span>
         <span class="font-mono text-xs text-accent tracking-widest uppercase">
           Available for work
         </span>
@@ -51,18 +54,19 @@ onMounted(() => {
       <div class="hero-cta flex items-center gap-6">
         <a
           href="#projects"
-          class="inline-flex items-center gap-2 px-6 py-3 bg-accent text-bg text-sm font-medium rounded-full hover:bg-accent-dim transition-colors duration-300"
+          class="group inline-flex items-center gap-2 px-6 py-3 bg-accent text-bg text-sm font-medium rounded-full hover:bg-accent-dim transition-colors duration-300"
         >
           View Work
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <svg class="group-hover:translate-x-0.5 transition-transform duration-300" width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </a>
         <a
           href="#contact"
-          class="text-sm text-text-muted hover:text-text transition-colors duration-300"
+          class="relative group text-sm text-text-muted hover:text-text transition-colors duration-300 py-0.5"
         >
           Get in touch →
+          <span class="absolute bottom-0 left-0 w-full h-px bg-accent/60 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
         </a>
       </div>
     </div>
