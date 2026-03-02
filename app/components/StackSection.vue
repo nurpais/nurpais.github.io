@@ -30,9 +30,10 @@ const stack: StackItem[] = [
 ]
 
 const section = useTemplateRef('section')
+let tween: gsap.core.Tween | null = null
 
 onMounted(() => {
-  gsap.from('.stack-card', {
+  tween = gsap.from('.stack-card', {
     opacity: 0,
     y: 32,
     duration: 0.6,
@@ -44,6 +45,10 @@ onMounted(() => {
       once: true,
     },
   })
+})
+
+onUnmounted(() => {
+  tween?.kill()
 })
 </script>
 

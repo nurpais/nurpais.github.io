@@ -11,6 +11,8 @@ type RevealOptions = {
 }
 
 export const useScrollReveal = () => {
+  const tweens: gsap.core.Tween[] = []
+
   const reveal = (target: string | Element | Element[], options: RevealOptions = {}) => {
     const {
       y = 40,
@@ -21,7 +23,7 @@ export const useScrollReveal = () => {
       start = 'top 85%',
     } = options
 
-    return gsap.from(target, {
+    const tween = gsap.from(target, {
       y,
       opacity,
       duration,
@@ -34,11 +36,18 @@ export const useScrollReveal = () => {
         once: true,
       },
     })
+    tweens.push(tween)
+    return tween
   }
 
   const revealLine = (target: string | Element, options: RevealOptions = {}) => {
     return reveal(target, { y: 20, duration: 0.6, ...options })
   }
+
+  onUnmounted(() => {
+    tweens.forEach(t => t.kill())
+    tweens.length = 0
+  })
 
   return { reveal, revealLine }
 }

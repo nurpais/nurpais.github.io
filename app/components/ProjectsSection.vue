@@ -40,9 +40,10 @@ const projects: Project[] = [
 ]
 
 const section = useTemplateRef('section')
+let tween: gsap.core.Tween | null = null
 
 onMounted(() => {
-  gsap.from('.project-row', {
+  tween = gsap.from('.project-row', {
     opacity: 0,
     y: 24,
     duration: 0.6,
@@ -54,6 +55,10 @@ onMounted(() => {
       once: true,
     },
   })
+})
+
+onUnmounted(() => {
+  tween?.kill()
 })
 </script>
 

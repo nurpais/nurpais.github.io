@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
+let tl: gsap.core.Timeline | null = null
+let scrollLineTween: gsap.core.Tween | null = null
+
 onMounted(() => {
-  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
+  tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
 
   tl.from('.hero-label', { opacity: 0, y: 16, duration: 0.6 })
     .from('.hero-name', { opacity: 0, y: 40, duration: 0.9 }, '-=0.3')
@@ -11,11 +14,16 @@ onMounted(() => {
     .from('.hero-cta', { opacity: 0, y: 16, duration: 0.5 }, '-=0.3')
     .from('.hero-scroll', { opacity: 0, duration: 0.5 }, '-=0.1')
     .add(() => {
-      gsap.fromTo('.hero-scroll-line',
+      scrollLineTween = gsap.fromTo('.hero-scroll-line',
         { y: '-100%' },
         { y: '250%', duration: 1.6, ease: 'sine.inOut', repeat: -1, repeatDelay: 0.2 },
       )
     })
+})
+
+onUnmounted(() => {
+  tl?.kill()
+  scrollLineTween?.kill()
 })
 </script>
 
