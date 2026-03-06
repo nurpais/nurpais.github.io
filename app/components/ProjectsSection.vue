@@ -74,9 +74,9 @@ onUnmounted(() => {
           :is="project.href ? 'a' : 'div'"
           v-for="(project, i) in projects"
           :key="project.title"
-          :href="project.href"
-          target="_blank"
-          rel="noopener noreferrer"
+          :href="project.href || undefined"
+          :target="project.href ? '_blank' : undefined"
+          :rel="project.href ? 'noopener noreferrer' : undefined"
           class="project-item group block py-8 sm:py-10"
         >
           <div class="flex items-baseline justify-between gap-4 mb-0 group-hover:mb-4 transition-all duration-300">

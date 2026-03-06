@@ -28,12 +28,12 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="relative min-h-screen flex flex-col justify-center px-6 pt-24 pb-16 max-w-6xl mx-auto">
+  <section id="hero" class="relative min-h-screen flex flex-col justify-center px-6 pt-24 pb-16 max-w-6xl mx-auto">
     <div class="max-w-4xl">
       <!-- Label -->
       <div class="hero-label opacity-0 flex items-center gap-2.5 mb-8">
         <span class="relative flex h-2 w-2">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-60" />
+          <span class="animate-ping motion-reduce:animate-none absolute inline-flex h-full w-full rounded-full bg-accent opacity-60" />
           <span class="relative inline-flex h-2 w-2 rounded-full bg-accent" />
         </span>
         <span class="font-mono text-xs text-accent tracking-widest uppercase">
@@ -65,7 +65,7 @@ onUnmounted(() => {
           class="group inline-flex items-center gap-2 px-6 py-3 bg-accent text-bg text-sm font-medium rounded-full hover:bg-accent-dim transition-colors duration-300"
         >
           View Work
-          <svg class="group-hover:translate-x-0.5 transition-transform duration-300" width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <svg aria-hidden="true" class="group-hover:translate-x-0.5 transition-transform duration-300" width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </a>

@@ -53,7 +53,7 @@ const onLeave = (el: Element, done: () => void) => {
       v-if="isMenuOpen"
       class="md:hidden fixed inset-0 z-40 bg-bg flex items-center px-8"
     >
-      <nav class="flex flex-col gap-5">
+      <nav aria-label="Mobile navigation" class="flex flex-col gap-5">
         <button
           v-for="(link, i) in links"
           :key="link.href"
@@ -90,7 +90,7 @@ const onLeave = (el: Element, done: () => void) => {
       </a>
 
       <!-- Desktop nav -->
-      <nav class="hidden md:flex items-center gap-8">
+      <nav aria-label="Main navigation" class="hidden md:flex items-center gap-8">
         <button
           v-for="link in links"
           :key="link.href"

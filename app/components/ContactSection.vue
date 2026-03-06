@@ -1,19 +1,19 @@
 <script setup lang="ts">
 const { reveal } = useScrollReveal()
-
 const section = useTemplateRef('section')
+
+const socials = [
+  { label: 'GitHub', href: 'https://github.com/nurpais' },
+  { label: 'Telegram', href: 'https://t.me/nurpais' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nurpais/' },
+  { label: 'Upwork', href: 'https://www.upwork.com/freelancers/nurpais' },
+]
 
 onMounted(() => {
   reveal('.contact-heading', { y: 40, duration: 0.8 })
   reveal('.contact-sub', { y: 20, duration: 0.6, delay: 0.1 })
   reveal('.contact-links', { y: 16, duration: 0.5, delay: 0.2 })
 })
-
-const socials = [
-  { label: 'GitHub', href: 'https://github.com/nurpais' },
-  { label: 'Telegram', href: 'https://t.me/nurpais' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/nurpais-orozulbaev' },
-]
 </script>
 
 <template>
@@ -37,11 +37,11 @@ const socials = [
           performance-critical systems, or experimental ideas at the edge of what's possible on the web.
         </p>
         <a
-          href="mailto:nurpais@example.com"
+          href="mailto:orozulbaev@gmail.com"
           class="contact-sub inline-flex items-center gap-2 text-accent hover:text-text transition-colors duration-300 font-mono text-sm group"
         >
-          nurpais@example.com
-          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 16 16" fill="none">
+          orozulbaev@gmail.com
+          <svg aria-hidden="true" class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 16 16" fill="none">
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </a>

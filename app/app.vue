@@ -7,6 +7,33 @@ gsap.registerPlugin(ScrollTrigger)
 
 useHead({
   htmlAttrs: { lang: 'en' },
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      name: 'Nurpais Orozulbaev',
+      jobTitle: 'Full-stack Developer',
+      url: 'https://nurpais.dev',
+      sameAs: [
+        'https://github.com/nurpais',
+        'https://www.linkedin.com/in/nurpais/',
+        'https://t.me/nurpais',
+        'https://www.upwork.com/freelancers/nurpais',
+      ],
+    }),
+  }],
+})
+
+useSeoMeta({
+  title: 'Nurpais Orozulbaev — Full-stack · Web3 · Rust/Wasm',
+  ogTitle: 'Nurpais Orozulbaev — Full-stack · Web3 · Rust/Wasm',
+  description: 'Full-stack developer specializing in high-performance Web3 solutions and low-level technology integration.',
+  ogDescription: 'Full-stack developer specializing in high-performance Web3 solutions and low-level technology integration.',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Nurpais Orozulbaev — Full-stack · Web3 · Rust/Wasm',
+  twitterDescription: 'Full-stack developer specializing in high-performance Web3 solutions and low-level technology integration.',
 })
 
 const lenisOptions = {
@@ -38,8 +65,11 @@ onUnmounted(() => {
 <template>
   <VueLenis root :options="lenisOptions" :auto-raf="false">
     <div class="relative bg-bg min-h-screen">
+      <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-accent focus:text-bg focus:px-4 focus:py-2 focus:rounded focus:text-sm focus:font-medium">
+        Skip to content
+      </a>
       <TheNav />
-      <main>
+      <main id="main">
         <HeroSection />
         <AboutSection />
         <StackSection />

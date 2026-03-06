@@ -20,6 +20,20 @@ export default defineNuxtConfig({
       { name: 'Geist', provider: 'google' },
       { name: 'Geist Mono', provider: 'google' },
     ],
+    defaults: {
+      weights: [400, 500, 600],
+      display: 'swap',
+    },
+  },
+
+  routeRules: {
+    '/**': {
+      headers: {
+        'X-Frame-Options': 'DENY',
+        'X-Content-Type-Options': 'nosniff',
+        'Referrer-Policy': 'strict-origin-when-cross-origin',
+      },
+    },
   },
 
   css: ['~/assets/css/main.css'],

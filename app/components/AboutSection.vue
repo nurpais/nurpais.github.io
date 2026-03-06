@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { reveal } = useScrollReveal()
-
 const section = useTemplateRef('section')
+const tags = ['Rust', 'WebAssembly', 'TypeScript', 'Solana', 'EVM', 'DeFi', 'XForms', 'Performance']
 
 onMounted(() => {
   reveal('.about-label', { y: 16, duration: 0.5 })
@@ -9,17 +9,15 @@ onMounted(() => {
   reveal('.about-text', { y: 24, duration: 0.7, stagger: 0.15, delay: 0.1 })
   reveal('.about-tag', { y: 12, duration: 0.4, stagger: 0.05, delay: 0.2 })
 })
-
-const tags = ['Rust', 'WebAssembly', 'TypeScript', 'Solana', 'EVM', 'DeFi', 'XForms', 'Performance']
 </script>
 
 <template>
   <section
     id="about"
     ref="section"
-    class="py-32 px-6 max-w-6xl mx-auto"
+    class="py-32 px-6 border-t border-border"
   >
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
       <!-- Left: heading -->
       <div>
         <div class="about-label flex items-center gap-3 mb-6">
