@@ -30,14 +30,14 @@ const stack: StackItem[] = [
 ]
 
 const section = useTemplateRef('section')
+const grid = useTemplateRef('grid')
 let tween: gsap.core.Tween | null = null
 
 onMounted(() => {
-  tween = gsap.from('.stack-card', {
+  tween = gsap.from(grid.value, {
     opacity: 0,
     y: 32,
     duration: 0.6,
-    stagger: 0.08,
     ease: 'power3.out',
     scrollTrigger: {
       trigger: section.value,
@@ -64,11 +64,11 @@ onUnmounted(() => {
         <span class="font-mono text-xs text-accent tracking-widest uppercase">Stack</span>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+      <div ref="grid" class="stack-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
         <div
           v-for="group in stack"
           :key="group.label"
-          class="stack-card bg-bg p-8 hover:bg-bg-subtle transition-colors duration-300 group"
+          class="bg-bg p-8 hover:bg-bg-subtle transition-colors duration-300 group"
         >
           <p class="font-mono text-xs text-accent tracking-widest uppercase mb-4">
             {{ group.label }}
@@ -83,6 +83,7 @@ onUnmounted(() => {
             </li>
           </ul>
         </div>
+        <div class="hidden sm:block bg-bg" />
       </div>
     </div>
   </section>
