@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { gsap } from 'gsap'
-
 type StackItem = {
   label: string
   items: string[]
@@ -29,33 +27,16 @@ const stack: StackItem[] = [
   },
 ]
 
-const section = useTemplateRef('section')
-const grid = useTemplateRef('grid')
-let tween: gsap.core.Tween | null = null
+const { reveal } = useScrollReveal()
 
 onMounted(() => {
-  tween = gsap.from(grid.value, {
-    opacity: 0,
-    y: 32,
-    duration: 0.6,
-    ease: 'power3.out',
-    scrollTrigger: {
-      trigger: section.value,
-      start: 'top 80%',
-      once: true,
-    },
-  })
-})
-
-onUnmounted(() => {
-  tween?.kill()
+  reveal('.stack-grid', { y: 32, duration: 0.6, start: 'top 80%' })
 })
 </script>
 
 <template>
   <section
     id="stack"
-    ref="section"
     class="py-32 px-6 border-t border-border"
   >
     <div class="max-w-6xl mx-auto">
@@ -64,7 +45,7 @@ onUnmounted(() => {
         <span class="font-mono text-xs text-accent tracking-widest uppercase">Stack</span>
       </div>
 
-      <div ref="grid" class="stack-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+      <div class="stack-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
         <div
           v-for="group in stack"
           :key="group.label"
@@ -83,7 +64,7 @@ onUnmounted(() => {
             </li>
           </ul>
         </div>
-        <div class="hidden sm:block bg-bg" />
+        <div class="hidden sm:block bg-bg" aria-hidden="true" />
       </div>
     </div>
   </section>

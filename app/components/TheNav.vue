@@ -118,7 +118,7 @@ const onLeave = (el: Element, done: () => void) => {
         />
         <span
           class="absolute left-0 w-full h-px bg-text-muted transition-all duration-300 bottom-0 origin-center"
-          :class="isMenuOpen ? '-translate-y-2 -rotate-45' : ''"
+          :class="isMenuOpen ? '-translate-y-[9px] -rotate-45' : ''"
         />
       </button>
     </div>
