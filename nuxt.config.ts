@@ -8,8 +8,12 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/fonts',
     '@nuxt/image',
-'lenis/nuxt'
+    'lenis/nuxt',
   ],
+
+  nitro: {
+    preset: 'github-pages',
+  },
 
   vite: {
     plugins: [tailwindcss()],
