@@ -5,8 +5,13 @@ import { VueLenis, useLenis } from 'lenis/vue'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const siteUrl = 'https://nurpais.github.io'
+const title = 'Nurpais Orozulbaev — Full-stack · Web3 · Rust/Wasm'
+const description = 'Full-stack developer specializing in high-performance Web3 solutions and low-level technology integration.'
+
 useHead({
   htmlAttrs: { lang: 'en' },
+  link: [{ rel: 'canonical', href: siteUrl }],
   script: [{
     type: 'application/ld+json',
     innerHTML: JSON.stringify({
@@ -14,7 +19,8 @@ useHead({
       '@type': 'Person',
       name: 'Nurpais Orozulbaev',
       jobTitle: 'Full-stack Developer',
-      url: 'https://nurpais.dev',
+      url: siteUrl,
+      image: `${siteUrl}/og-image.svg`,
       sameAs: [
         'https://github.com/nurpais',
         'https://www.linkedin.com/in/nurpais/',
@@ -26,14 +32,17 @@ useHead({
 })
 
 useSeoMeta({
-  title: 'Nurpais Orozulbaev — Full-stack · Web3 · Rust/Wasm',
-  ogTitle: 'Nurpais Orozulbaev — Full-stack · Web3 · Rust/Wasm',
-  description: 'Full-stack developer specializing in high-performance Web3 solutions and low-level technology integration.',
-  ogDescription: 'Full-stack developer specializing in high-performance Web3 solutions and low-level technology integration.',
+  title,
+  description,
+  ogTitle: title,
+  ogDescription: description,
   ogType: 'website',
+  ogUrl: siteUrl,
+  ogImage: `${siteUrl}/og-image.svg`,
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Nurpais Orozulbaev — Full-stack · Web3 · Rust/Wasm',
-  twitterDescription: 'Full-stack developer specializing in high-performance Web3 solutions and low-level technology integration.',
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterImage: `${siteUrl}/og-image.svg`,
 })
 
 const lenisOptions = {

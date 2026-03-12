@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="#222222" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="#222222" stroke-width="1"/>
+
+  <!-- Accent line -->
+  <rect x="80" y="240" width="48" height="2" fill="#4ade80"/>
+
+  <!-- Name -->
+  <text x="80" y="320" font-family="ui-monospace, monospace" font-size="64" font-weight="600" fill="#f5f5f5">Nurpais Orozulbaev</text>
+
+  <!-- Tagline -->
+  <text x="80" y="375" font-family="ui-monospace, monospace" font-size="22" fill="#888888" letter-spacing="2">Full-stack · Web3 · Rust / Wasm</text>
+
+  <!-- URL -->
+  <text x="80" y="540" font-family="ui-monospace, monospace" font-size="18" fill="#4ade80">nurpais.github.io</text>
+</svg>
