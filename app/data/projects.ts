@@ -8,10 +8,10 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'XForms Parser',
-    description: 'XForms parsing and validation engine written in Rust, compiled to WebAssembly for browser integration. Supports constraints, relevant rules, calculate expressions, multilingual itext, and repeat groups — no server-side transformation required.',
+    title: 'XForm Engine',
+    description: 'Lightweight OpenRosa XForm renderer built on Rust + WebAssembly. XML parsing, XPath evaluation, constraint validation, and iText localization run in WASM at near-native speed — zero framework dependencies.',
     tags: ['Rust', 'WebAssembly', 'JavaScript'],
-    href: 'https://github.com/nurpais/rust-form',
+    href: 'https://rust-form.vercel.app/',
     status: 'active',
   },
   {
@@ -21,9 +21,10 @@ export const projects: Project[] = [
     status: 'active',
   },
   {
-    title: 'DEX Analytics',
-    description: 'Real-time market data analysis tool for decentralized exchanges. On-chain data aggregation and visualization.',
-    tags: ['TypeScript', 'EVM', 'Node.js'],
+    title: 'Crypto Board',
+    description: 'Real-time crypto intelligence dashboard with DexScreener integration, AI-powered token analysis, and Solana wallet explorer. Server-side data fetching with instant client-side tab switching.',
+    tags: ['Next.js', 'TypeScript', 'Solana', 'WalletConnect', 'Helius'],
+    href: 'https://crypto-board-rosy.vercel.app/',
     status: 'active',
   },
   {
