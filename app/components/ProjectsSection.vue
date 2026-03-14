@@ -19,7 +19,7 @@ onMounted(() => {
         <span class="font-mono text-xs text-accent tracking-widest uppercase">Projects</span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border">
+      <div class="grid grid-cols-1 md:grid-cols-2 border-t border-l border-border">
         <component
           :is="project.href ? 'a' : 'div'"
           v-for="(project, i) in projects"
@@ -27,7 +27,7 @@ onMounted(() => {
           :href="project.href || undefined"
           :target="project.href ? '_blank' : undefined"
           :rel="project.href ? 'noopener noreferrer' : undefined"
-          class="project-card group bg-bg p-8 flex flex-col gap-6 hover:bg-bg-subtle transition-colors duration-300"
+          class="project-card group p-8 flex flex-col gap-6 border-r border-b border-border hover:bg-bg-subtle transition-colors duration-300"
           :class="project.status === 'coming-soon' ? 'opacity-50' : ''"
         >
           <!-- Header -->
@@ -70,6 +70,22 @@ onMounted(() => {
             </span>
           </div>
         </component>
+
+        <!-- Decorative filler cell -->
+        <div
+          v-if="projects.length % 2 !== 0"
+          class="hidden md:flex border-r border-b border-border items-center justify-center overflow-hidden"
+          aria-hidden="true"
+        >
+          <svg class="w-full h-full opacity-[0.07]" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="project-dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+                <circle cx="12" cy="12" r="1" fill="#4ade80" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#project-dots)" />
+          </svg>
+        </div>
       </div>
     </div>
   </section>

@@ -54,8 +54,8 @@ onUnmounted(() => {
 
       <!-- Bio -->
       <p class="hero-bio opacity-0 text-base text-text-muted leading-relaxed max-w-xl mb-12">
-        Full-stack developer with 8 years of experience, specializing in high-performance
-        Web3 solutions and integrating low-level technologies into web interfaces.
+        Full-stack web developer with 8+ years of experience. Building with React, Vue,
+        Node.js, and Solana. 70+ projects delivered on Upwork.
       </p>
 
       <!-- CTA -->

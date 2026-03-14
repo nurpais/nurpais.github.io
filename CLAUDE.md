@@ -34,21 +34,17 @@ Single-page, dark clean minimal aesthetic with green accent.
 **Tagline**: Full-stack · Web3 · Rust/Wasm
 
 **Bio (short)**:
-Full-stack разработчик с 8-летним опытом, специализирующийся на высокопроизводительных Web3-решениях и интеграции низкоуровневых технологий в веб-интерфейсы.
+Full-stack web developer with 8+ years of experience. React, Vue, Node.js, Solana. 70+ projects on Upwork, $60K+ earned.
 
 **About (full)**:
-Я прошел путь от классического фронтенда до полноценного full-stack стека, сфокусировавшись на создании архитектурно сложных систем. Моя экспертиза лежит на стыке современного веба и блокчейн-технологий.
-
-Сейчас я сосредоточен на решении задач, требующих высокой производительности: разрабатываю системы парсинга и валидации XForms на Rust, интегрируя их в фронтенд через WebAssembly (Wasm). Это позволяет мне выносить тяжелую логику на уровень, близкий к «железу», сохраняя при этом гибкость веба.
-
-**What drives him**:
-Инженерный подход, основанный на глубоком понимании основ. Активно изучает математику и криптографию. Фокус на безопасных и эффективных протоколах в DeFi и Web3.
+Full-stack developer working across the entire web stack - React/Next.js, Vue/Nuxt on frontend, Node.js/NestJS on backend. Deep into Web3 (Solana, EVM). 70+ projects delivered on Upwork. Uses Rust/WebAssembly when raw performance is needed.
 
 **Tech stack**:
-- Core: Rust (Wasm integration), TypeScript, современные фреймворки
-- Blockchain: Web3, смарт-контракты, DEX-решения, Solana, EVM
-- Architecture: Full-stack, парсинг данных, performance engineering
-- Mindset: криптографические примитивы, прикладная математика, real-time market data tools
+- Frontend: React, Next.js, Vue 3, Nuxt, TypeScript, TailwindCSS, Radix, shadcn, GSAP, Framer Motion
+- Backend: Node.js, NestJS, Python, PostgreSQL, MySQL, REST APIs, WebSocket
+- Web3: Solana (@solana/web3.js, Anchor), EVM (ethers.js, viem, wagmi), RainbowKit, Helius, Alchemy
+- Systems: Rust, WebAssembly
+- Other: XML/XForm/XSLT, DevOps basics
 
 ## Projects
 Placeholders for now — to be filled in later with real projects.

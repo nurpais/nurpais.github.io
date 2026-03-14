@@ -6,8 +6,8 @@ import { VueLenis, useLenis } from 'lenis/vue'
 gsap.registerPlugin(ScrollTrigger)
 
 const siteUrl = 'https://nurpais.github.io'
-const title = 'Nurpais Orozulbaev — Full-stack · Web3 · Rust/Wasm'
-const description = 'Full-stack developer specializing in high-performance Web3 solutions and low-level technology integration.'
+const title = 'Nurpais O. - Full-stack Web Developer | React, Vue, Solana, Node.js'
+const description = 'Nurpais O. - Full-stack web developer. React, Next.js, Vue, Solana, Node.js. 8+ years, 70+ projects.'
 
 useHead({
   htmlAttrs: { lang: 'en' },

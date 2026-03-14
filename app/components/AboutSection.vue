@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { reveal } = useScrollReveal()
-const tags = ['Rust', 'WebAssembly', 'TypeScript', 'Solana', 'EVM', 'DeFi', 'XForms', 'Performance']
+const tags = ['React', 'Next.js', 'Vue', 'Nuxt', 'Node.js', 'NestJS', 'Solana', 'EVM', 'Rust', 'WebAssembly']
 
 onMounted(() => {
   reveal('.about-label', { y: 16, duration: 0.5 })
@@ -24,7 +24,7 @@ onMounted(() => {
         </div>
 
         <h2 class="about-heading font-sans text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-tight tracking-tight text-text">
-          Engineering at the intersection of web and low-level systems.
+          Full-stack developer with a thing for Web3 and hard problems.
         </h2>
 
         <!-- Tags -->
@@ -42,20 +42,19 @@ onMounted(() => {
       <!-- Right: text -->
       <div class="space-y-6">
         <p class="about-text text-text-muted leading-relaxed">
-          I started with classical frontend and grew into a full-stack engineer focused on
-          architecturally complex systems. My expertise sits at the intersection of modern
-          web and blockchain technologies.
+          8+ years building for the web. I work across the full stack - React/Next.js,
+          Vue/Nuxt on the frontend, Node.js/NestJS on the backend. Over the last few years
+          got deep into Web3, building on Solana and EVM chains.
         </p>
         <p class="about-text text-text-muted leading-relaxed">
-          Currently I'm focused on high-performance challenges — building XForms parsing and
-          validation systems in Rust, integrating them into the frontend via WebAssembly.
-          This lets me push heavy logic to near-metal level while preserving web's flexibility.
+          70+ projects delivered on Upwork, $60K+ earned. I've worked on everything from
+          DeFi dashboards and wallet integrations to data-heavy enterprise tools. When
+          something needs raw performance, I reach for Rust and WebAssembly.
         </p>
         <p class="about-text text-text-muted leading-relaxed">
-          Beyond commercial work, I actively study mathematics and cryptography — this helps
-          me design more secure and efficient protocols in DeFi and Web3. My approach is
-          finding balance between applied tasks and the foundational knowledge that enables
-          next-generation products.
+          I like solving problems that don't have obvious answers - whether that's building
+          an XForms engine in WASM, wiring up real-time market data pipelines, or figuring
+          out the right architecture for a complex product.
         </p>
       </div>
     </div>

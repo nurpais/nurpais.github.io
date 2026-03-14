@@ -6,24 +6,24 @@ type StackItem = {
 
 const stack: StackItem[] = [
   {
-    label: 'Core',
-    items: ['Rust', 'WebAssembly', 'TypeScript', 'Node.js'],
-  },
-  {
     label: 'Frontend',
-    items: ['Vue 3', 'Nuxt', 'React', 'Next.js', 'Tailwind CSS'],
+    items: ['React', 'Next.js', 'Vue 3', 'Nuxt', 'TypeScript', 'TailwindCSS', 'Radix', 'shadcn', 'GSAP', 'Framer Motion'],
   },
   {
-    label: 'Blockchain',
-    items: ['Solana', 'EVM', 'Smart Contracts', 'DeFi', 'DEX'],
+    label: 'Backend',
+    items: ['Node.js', 'NestJS', 'Python', 'PostgreSQL', 'MySQL', 'REST APIs', 'WebSocket'],
   },
   {
-    label: 'Architecture',
-    items: ['Full-stack', 'Performance Engineering', 'Data Parsing', 'Real-time Systems'],
+    label: 'Web3',
+    items: ['Solana', 'Anchor', '@solana/web3.js', 'EVM', 'ethers.js', 'viem', 'wagmi', 'RainbowKit', 'Helius', 'Alchemy'],
   },
   {
-    label: 'Research',
-    items: ['Cryptography', 'Applied Mathematics', 'Protocol Design', 'Market Analysis'],
+    label: 'Systems',
+    items: ['Rust', 'WebAssembly'],
+  },
+  {
+    label: 'Other',
+    items: ['XML/XForm/XSLT', 'DevOps', 'Git'],
   },
 ]
 
@@ -45,11 +45,11 @@ onMounted(() => {
         <span class="font-mono text-xs text-accent tracking-widest uppercase">Stack</span>
       </div>
 
-      <div class="stack-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+      <div class="stack-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-border">
         <div
           v-for="group in stack"
           :key="group.label"
-          class="bg-bg p-8 hover:bg-bg-subtle transition-colors duration-300 group"
+          class="p-8 border-r border-b border-border hover:bg-bg-subtle transition-colors duration-300 group"
         >
           <p class="font-mono text-xs text-accent tracking-widest uppercase mb-4">
             {{ group.label }}
@@ -64,7 +64,21 @@ onMounted(() => {
             </li>
           </ul>
         </div>
-        <div class="hidden sm:block bg-bg" aria-hidden="true" />
+
+        <!-- Decorative filler cell -->
+        <div
+          class="hidden lg:flex border-r border-b border-border items-center justify-center overflow-hidden"
+          aria-hidden="true"
+        >
+          <svg class="w-full h-full opacity-[0.07]" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="stack-dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+                <circle cx="12" cy="12" r="1" fill="#4ade80" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#stack-dots)" />
+          </svg>
+        </div>
       </div>
     </div>
   </section>

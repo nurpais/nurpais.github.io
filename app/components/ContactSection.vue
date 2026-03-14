@@ -33,8 +33,8 @@ onMounted(() => {
           Let's build something together.
         </h2>
         <p class="contact-sub text-text-muted leading-relaxed max-w-2xl mb-10">
-          Open to interesting engineering challenges — whether it's Web3 architecture,
-          performance-critical systems, or experimental ideas at the edge of what's possible on the web.
+          Open to interesting projects - full-stack web apps, Web3 integrations, or anything
+          that needs solid engineering. Freelance or contract.
         </p>
         <a
           href="mailto:orozulbaev@gmail.com"
