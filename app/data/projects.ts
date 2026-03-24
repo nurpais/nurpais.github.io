@@ -49,14 +49,7 @@ export const projects: Project[] = [
     href: 'https://nwork-credit33.netlify.app/',
     status: 'active',
   },
-  {
-    title: 'Wedding Loan',
-    description: 'Elegant wedding-themed landing page for a loan service. Loan calculator, testimonials carousel, step-by-step application guide, and multi-page layout with soft romantic aesthetics.',
-    tags: ['Bootstrap', 'SCSS', 'Swiper', 'Webpack'],
-    href: 'https://nwork-wedding-loan.netlify.app/',
-    status: 'active',
-  },
-  {
+{
     title: 'Tunduk',
     description: 'Web platform for interacting with government services through the Tunduk Hub. OpenID Connect auth via Keycloak, XForm-based form submission, services catalog, and multilingual support (Russian/Kyrgyz).',
     tags: ['NestJS', 'Alpine.js', 'Tailwind', 'enketo-core', 'Vite'],

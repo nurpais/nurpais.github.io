@@ -28,7 +28,6 @@ onMounted(() => {
           :target="project.href ? '_blank' : undefined"
           :rel="project.href ? 'noopener noreferrer' : undefined"
           class="project-card group p-8 flex flex-col gap-6 border-r border-b border-border hover:bg-bg-subtle transition-colors duration-300"
-          :class="project.status === 'coming-soon' ? 'opacity-50' : ''"
         >
           <!-- Header -->
           <div class="flex items-start justify-between gap-4">
@@ -50,7 +49,7 @@ onMounted(() => {
           <div class="flex-1">
             <h3
               class="font-sans text-2xl font-semibold leading-tight tracking-tight mb-3 transition-colors duration-300"
-              :class="project.status === 'coming-soon' ? 'text-text-muted' : 'text-text group-hover:text-accent'"
+              class="text-text group-hover:text-accent"
             >
               {{ project.title }}
             </h3>
