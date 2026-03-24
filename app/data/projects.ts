@@ -55,4 +55,10 @@ export const projects: Project[] = [
     tags: ['NestJS', 'Alpine.js', 'Tailwind', 'enketo-core', 'Vite'],
     status: 'coming-soon',
   },
+  {
+    title: 'Binance Signal Bot',
+    description: 'Crypto trading signal bot that monitors 100+ coins on Binance. Multi-timeframe analysis (4H/daily), technical indicators (EMA, RSI, ATR, Bollinger Bands), Bitcoin trend filtering, backtesting engine, and real-time metrics via Prometheus/Grafana.',
+    tags: ['Python', 'PostgreSQL', 'TimescaleDB', 'Docker', 'Prometheus'],
+    status: 'coming-soon',
+  },
 ]
