@@ -48,8 +48,7 @@ onMounted(() => {
           <!-- Title + description -->
           <div class="flex-1">
             <h3
-              class="font-sans text-2xl font-semibold leading-tight tracking-tight mb-3 transition-colors duration-300"
-              class="text-text group-hover:text-accent"
+              class="font-sans text-2xl font-semibold leading-tight tracking-tight mb-3 transition-colors duration-300 text-text group-hover:text-accent"
             >
               {{ project.title }}
             </h3>
