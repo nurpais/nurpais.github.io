@@ -43,6 +43,12 @@ onMounted(() => {
             >
               <path d="M3 13L13 3M13 3H6M13 3v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
+            <span
+              v-if="project.status === 'coming-soon'"
+              class="font-mono text-[10px] text-text-dim tracking-widest uppercase"
+            >
+              Coming soon
+            </span>
           </div>
 
           <!-- Title + description -->
