@@ -57,9 +57,9 @@ export const projects: Project[] = [
     status: 'active',
   },
   {
-    title: 'Coming Soon',
-    description: 'Exploring cryptographic primitives and ZK-proof integration.',
-    tags: ['Cryptography', 'ZK', 'Rust'],
+    title: 'Tunduk',
+    description: 'Web platform for interacting with government services through the Tunduk Hub. OpenID Connect auth via Keycloak, XForm-based form submission, services catalog, and multilingual support (Russian/Kyrgyz).',
+    tags: ['NestJS', 'Alpine.js', 'Tailwind', 'enketo-core', 'Vite'],
     status: 'coming-soon',
   },
 ]
