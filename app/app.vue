@@ -22,9 +22,6 @@ useHead({
       url: siteUrl,
       image: `${siteUrl}/og-image.svg`,
       sameAs: [
-        'https://github.com/nurpais',
-        'https://www.linkedin.com/in/nurpais/',
-        'https://t.me/nurpais',
         'https://www.upwork.com/freelancers/nurpais',
       ],
     }),

@@ -3,9 +3,6 @@ const { reveal } = useScrollReveal()
 const section = useTemplateRef('section')
 
 const socials = [
-  { label: 'GitHub', href: 'https://github.com/nurpais' },
-  { label: 'Telegram', href: 'https://t.me/nurpais' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nurpais/' },
   { label: 'Upwork', href: 'https://www.upwork.com/freelancers/nurpais' },
 ]
 
@@ -32,19 +29,10 @@ onMounted(() => {
         <h2 class="contact-heading font-sans text-[clamp(2rem,4vw,3.5rem)] font-semibold leading-tight tracking-tight text-text mb-6">
           Let's build something together.
         </h2>
-        <p class="contact-sub text-text-muted leading-relaxed max-w-2xl mb-10">
+        <p class="contact-sub text-text-muted leading-relaxed max-w-2xl">
           Open to interesting projects - full-stack web apps, Web3 integrations, or anything
-          that needs solid engineering. Freelance or contract.
+          that needs solid engineering. Freelance or contract via Upwork.
         </p>
-        <a
-          href="mailto:orozulbaev@gmail.com"
-          class="contact-sub inline-flex items-center gap-2 text-accent hover:text-text transition-colors duration-300 font-mono text-sm group"
-        >
-          orozulbaev@gmail.com
-          <svg aria-hidden="true" class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" viewBox="0 0 16 16" fill="none">
-            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </a>
       </div>
 
       <div class="contact-links flex items-center gap-6">
