@@ -8,13 +8,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'XForm Engine',
-    description: 'Lightweight OpenRosa XForm renderer built on Rust + WebAssembly. XML parsing, XPath evaluation, constraint validation, and iText localization run in WASM at near-native speed. Zero framework dependencies.',
-    tags: ['Rust', 'WebAssembly', 'JavaScript'],
-    href: 'https://rust-form.vercel.app/',
-    status: 'active',
-  },
-{
     title: 'Crypto Board',
     description: 'Real-time crypto intelligence dashboard. DexScreener market data, AI-powered token analysis, Solana wallet explorer with transaction history. SSR data fetching with instant client-side tab switching.',
     tags: ['Next.js', 'TypeScript', 'Solana', 'WalletConnect', 'Helius'],
@@ -59,6 +52,12 @@ export const projects: Project[] = [
     title: 'Binance Signal Bot',
     description: 'Crypto trading signal bot that monitors 100+ coins on Binance. Multi-timeframe analysis (4H/daily), technical indicators (EMA, RSI, ATR, Bollinger Bands), Bitcoin trend filtering, backtesting engine, and real-time metrics via Prometheus/Grafana.',
     tags: ['Python', 'PostgreSQL', 'TimescaleDB', 'Docker', 'Prometheus'],
+    status: 'coming-soon',
+  },
+  {
+    title: 'XForm Engine',
+    description: 'Lightweight OpenRosa XForm renderer built on Rust + WebAssembly. XML parsing, XPath evaluation, constraint validation, and iText localization run in WASM at near-native speed. Zero framework dependencies.',
+    tags: ['Rust', 'WebAssembly', 'JavaScript'],
     status: 'coming-soon',
   },
 ]
